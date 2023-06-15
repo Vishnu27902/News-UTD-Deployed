@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/NewsAPI.css"
+      type="text/css"
+      class="src"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/NewsAPI.js"></script>
+    <title>News UTD</title>
+  </head>
+  <body>
+    <body>
+      <header>
+        <h1 class="logo">News UTD</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+        <nav>
+          <ul>
+            <li>Welcome <span id="topusername"></span></li>
+            <li><p id="logout">Logout</p></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+
+      <section class="section-three">
+        <h3>
+          Hello <span id="middleusername"></span>... Welcome to News UTD, Your
+          API Key is generated during login and you can find it below...<br />
+          Have a Happy Day
+        </h3>
+      </section>
+
+      <section class="section-four">
+        <div class="flex-group">
+          <div>
+            <img src="./assets/newspaper.jpg" />
+          </div>
+          <div class="content-container">
+            <p>
+              Get Your API Key in the down below box if the API Key is expired
+              using the Generate new API Key button, create a new one.<br />
+            </p>
+            <h2>Sample</h2>
+            <div class="box" id="sampleBox">
+              <p class="text" id="sample">
+                https://news-utd-app.onrender.com/news/api/&lt;API_Key&gt;/TheHindu
+              </p>
+            </div>
+            <h2>API Key</h2>
+            <br />
+            <div class="box" id="apiKeyBox">
+              <p class="text" id="apiKey"></p>
+              <button class="button" type="button">
+                <img src="./assets/copy.png" alt="copy" />
+              </button>
+            </div>
+            <button class="learn-more-btn section-four-btn" id="generateAPIKey">
+              Generate API Key
+            </button>
+          </div>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
